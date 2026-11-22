@@ -1,7 +1,12 @@
 import time
+import sys
+
+print(f"Версия Python: {sys.version}") 
+
 import requests
 
 BASE_URL = "https://platform-api2.max.ru"
+print("Проба пера")
 TOKEN = input()
 
 
@@ -10,6 +15,7 @@ def poll_updates():
     print("Запуск long polling... (Ctrl+C для остановки)")
 
     while True:
+        рр =  1/0
         params = {
             "limit": 100,   # максимум обновлений за один запрос
             "timeout": 30,  # сколько секунд сервер держит соединение
